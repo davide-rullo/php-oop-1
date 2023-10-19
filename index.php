@@ -1,22 +1,7 @@
 <?php
-class Movie
-{
-    public $title;
-    public $year;
-    public $genre;
+include './models/movie.php';
+include 'db.php';
 
-    function __construct($_title, $_year, $_genre)
-    {
-        $this->title = $_title;
-        $this->year = $_year;
-        $this->genre = $_genre;
-    }
-}
-
-$movie1 = new Movie('Oppenheimer', '2023', ['drammatico', 'storico']);
-$movie2 = new Movie('Avatar', '2011', ['avventura', 'fantascienza']);
-$movie3 = new Movie('Star Wars', '1997', ['fantascienza', 'azione']);
-$movie4 = new Movie('Dunkirk', '2020', ['storico', 'fantascienza']);
 
 ?>
 
